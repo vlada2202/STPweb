@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="laba3.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label for="fullname">ФИО:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выбор пола</legend>
+            <label>
+                <input type="radio" name="gender" value="male" required> Мужской
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female" required> Женский
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other" required> Другой
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Согласие</legend>
+            <label>
+                <input type="checkbox" name="agreement" required> Я согласен(на) с условиями использования
+            </label>
+        </fieldset>
+
+        <input type="file" id="file" name="file" id="file">
+        <label for="file" class="fileButton">Выберите фото профиля</label>
+
+        <div class="button-container">
+            <input type="submit" value="Зарегистрироваться">
+            <input type="reset" value="Сбросить">
+        </div>
+    </form>
+</body>
+</html>
