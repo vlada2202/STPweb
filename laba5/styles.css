@@ -1,0 +1,57 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(204, 145, 219);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(223, 84, 193, 0.178);
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.TheFirstBox{
+    display: flex;
+    order: 1;
+}
+
+.Section{
+    display: flex;
+    order:2;
+}
+
+.TheThirdBox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 68%;
+    order: 2;
+}
+
+.TheThirdBox article{
+    flex-basis: calc(50% - 40px);
+}
+
+.TheSecondBox{
+    display: flex;
+    flex-basis: 34%;
+    flex-direction: column-reverse;
+    order: 3;
+}
